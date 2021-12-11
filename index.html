@@ -1,0 +1,29 @@
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet">
+<style>
+	body {
+		margin: 0;
+		background-color: black;
+	}
+</style>
+<title>Star Wars</title>
+
+<div class="fixed text-white ml-2 mt-2 select-none">
+	<span>Score : </span>
+	<span id="scoreID">0</span>
+</div>
+
+<div class="fixed inset-0 flex items-center justify-center" id="modelID">
+	<div class="bg-white max-w-md w-full p-6 text-center">
+		<h1 class="text-4xl font-bold leading-none" id="mainScore">0</h1>
+		<p class="text-sm text-gray-900 mb-4">Points</p>
+		<div>
+			<button class="bg-blue-500 text-white font-bold py-3 w-full rounded-full" id="startGameBtn">Start Game</button>
+		</div>
+	</div>
+</div>
+
+<canvas></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./index.js"></script>
